@@ -12,4 +12,4 @@ $ git init
 
 Para ver mais comandos acessar arquivo
 
-$ comandos.txt
+$ comandos.doc
