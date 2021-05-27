@@ -1,17 +1,11 @@
 TREINANDO COMANDOS GIT
 
-Considerando que o git tenha sido instalado, é necessário fazer as configurações iniciais, o mais comum é configurar usuário e email globalmente
+Após instalar, fazer configurações de usuário e e-mail vejamos alguns comandos.
 
-$ git config --global user.name "nome" (configura o nome usuário local)
-$ git config --global user.email "email"(este é muito importante pois é o que liga com repositório remoto)
-
-Obs: posteriormente cria uma pasta/diretório e inicia o git
-$ git init
-
-$ git status (verificar o status atual do repositorio)
+$ git status (verificar o status atual do repositório)
 $ git add Readme.md (adiciona arquivo para ser "rastreado")
-$ git commit -m "comentario" (envia arquivo ao repositorio -m é de mensagem, esta identicará o que foi feito)
-$ git commit -am "comentario" (tendo sido add anteriormente, este adiciona e faz commit de itens que estão em unmodified e modified)
+$ git commit -m "comentário" (envia arquivo ao repositorio -m é de mensagem, esta identicará o que foi feito)
+$ git commit -am "comentário" (tendo sido add anteriormente, este adiciona e faz commit de itens que estão em unmodified e modified)
 
 $ git log (apresenta informações hash, autor, data, msg)
     $ git log --decorate
@@ -25,23 +19,15 @@ Obs: com a hash identificamos o que foi feito no commit.
 $ git diff (apresenta mudanças ANTES de fazer commit)
     $ git diff --name-only (diz somente nome do arquivo modificado)
 
-$ git checkout + nome.extensao (Volta o arquivo para antes da edição, checkout é antes de add e commit)
+$ git checkout + nome.extensão (Volta o arquivo para antes da edição, checkout usa-se antes de add e commit)
 
-$ git reset HEAD nome.extensão (Arquivo foi add porém esta no staged, ele voltará para modified podendo usar o git checkout)
-    $ git reset ALTERA historico do commit, nogi HARD evite depois que estiver no repositorio remoto sendo compartilhado
+$ git reset HEAD nome.extensão (Arquivo foi add, porém está no staged, ele voltará para modified podendo usar o git checkout)
+    $ git reset ALTERA histórico do commit, evite git HARD depois que estiver no repositório remoto sendo compartilhado com outros.
         $ git reset --soft + hash anterior (mata o commit e volta para staged)
         $ git reset --mixed + hash anterior (mata o commit e volta para ANTES staged ou seja modified )
         $ git reset --hard + hash anterior (ignora a existencia do commit, mata tudo que foi feito neste commit)
 
-AGORA INTEGRANDO GIT & GITHUB
-
-$ git push origin main (origin é onde estou enviando, no caso repositorio remoto é o origin. Main é branch onde estou)
-
-$ git clone + chave SSH (permite clonar um repositório existente no repositório remoto)
-
-$ FORK (faz cópia de projeto que não é seu, para o seu repositório remoto, fork é feito em projetos de outros, clone é nos meus)
-
-$ BRANCH (ponteiro movel que leva o commit, poder modificar sem alterar o local principal, evita conflitos)
+$ BRANCH (ponteiro móvel que leva o commit, podemos modificar sem alterar o local principal, evita conflitos)
     $ git checkout -b nomebranch (cria um novo branch e já entra nele)
     $ git branch (mostra os branch existente)
     $ git checkout -D nomebranch (remove a branch)
@@ -49,3 +35,13 @@ $ BRANCH (ponteiro movel que leva o commit, poder modificar sem alterar o local 
     $ git merge nomebranch (unir branch criada com a master/main )
 
     $ git rebase nomebranch (unir branch rebasetest com master/main)
+
+                    AGORA INTEGRANDO GIT & GITHUB
+
+$ git push origin main/master (origin é onde estamos enviando, no caso repositório remoto é o origin. Main/master é branch onde estamos)
+
+$ git clone + chave SSH (permite clonar um repositório existente no repositório remoto)
+
+$ FORK (faz cópia de projeto que não é seu, para o seu repositório remoto, fork é feito em projetos de outros, clone é nos meus)
+
+
