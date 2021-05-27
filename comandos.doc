@@ -50,7 +50,6 @@ $ git tag -a 1.0.0 -m "Readme finalizado" (criando uma nova tag)
 
 $ git revert + hash (reverte o estado do commit mas sem perder o commit mantendo histórico, diferentemente do reset)
 
-$ git 
 
                     AGORA INTEGRANDO GIT & GITHUB
 
@@ -63,3 +62,6 @@ $ FORK (faz cópia de projeto que não é seu, para o seu repositório remoto, f
 $ git push origin: 1.0.0 (deleta do repositório remoto a tag)
 
 $ git push origin: nomebranch (deleta do repositório remoto a branch)
+    $ git merge nomebranch (unir branch criada com a master/main )
+
+    $ git rebase nomebranch (unir branch rebasetest com master/main)
