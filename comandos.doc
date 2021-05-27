@@ -36,6 +36,22 @@ $ git merge nomebranch (unir branch criada com a master/main )
 
 $ git rebase nomebranch (unir branch rebasetest com master/main)
 
+$ CRIAR .gitignore (arquivo que escrevemos os padrões que não serão rastreados)
+
+$ git stash (guarda modificações NÃO comitadas)
+    git stash apply (via aplicar as modificações)
+    git stash clear (limpa, ou seja retira todas modificações colocada no stash)
+
+$ git config --global alias.s status (alias = atalho, após o ponto será um atalho para o comando, neste caso s atalho para status)
+
+$ git tag -a 1.0.0 -m "Readme finalizado" (criando uma nova tag)
+    $ git push origin master --tags (subir para repositório remoto)
+    $ git tag -d 1.0.0 (deleta no repositório local a tag)
+
+$ git revert + hash (reverte o estado do commit mas sem perder o commit mantendo histórico, diferentemente do reset)
+
+$ git 
+
                     AGORA INTEGRANDO GIT & GITHUB
 
 $ git push origin main/master (origin é onde estamos enviando, no caso repositório remoto é o origin. Main/master é branch onde estamos)
@@ -44,4 +60,6 @@ $ git clone + chave SSH (permite clonar um repositório existente no repositóri
 
 $ FORK (faz cópia de projeto que não é seu, para o seu repositório remoto, fork é feito em projetos de outros, clone é nos meus)
 
+$ git push origin: 1.0.0 (deleta do repositório remoto a tag)
 
+$ git push origin: nomebranch (deleta do repositório remoto a branch)
