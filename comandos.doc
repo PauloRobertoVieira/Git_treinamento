@@ -32,9 +32,9 @@ $ BRANCH (ponteiro móvel que leva o commit, podemos modificar sem alterar o loc
     $ git branch (mostra os branch existente)
     $ git checkout -D nomebranch (remove a branch)
 
-    $ git merge nomebranch (unir branch criada com a master/main )
+$ git merge nomebranch (unir branch criada com a master/main )
 
-    $ git rebase nomebranch (unir branch rebasetest com master/main)
+$ git rebase nomebranch (unir branch rebasetest com master/main)
 
                     AGORA INTEGRANDO GIT & GITHUB
 
