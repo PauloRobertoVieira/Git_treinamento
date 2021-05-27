@@ -28,7 +28,7 @@ $ git diff (apresenta mudanças ANTES de fazer commit)
 $ git checkout + nome.extensao (Volta o arquivo para antes da edição, checkout é antes de add e commit)
 
 $ git reset HEAD nome.extensão (Arquivo foi add porém esta no staged, ele voltará para modified podendo usar o git checkout)
-    $ git reset ALTERA historico do commit, no HARD evite depois que estiver no repositorio remoto sendo compartilhado
+    $ git reset ALTERA historico do commit, nogi HARD evite depois que estiver no repositorio remoto sendo compartilhado
         $ git reset --soft + hash anterior (mata o commit e volta para staged)
         $ git reset --mixed + hash anterior (mata o commit e volta para ANTES staged ou seja modified )
         $ git reset --hard + hash anterior (ignora a existencia do commit, mata tudo que foi feito neste commit)
